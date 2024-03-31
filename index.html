@@ -110,8 +110,8 @@
                 </div>
             </div>
 	    <div>
-		    <p style="font-size:large; color:black"> Mô hình đề xuất được huấn luyện trên tổng cộng 100 giờ dữ liệu bao gồm nhiều chất giọng thuộc nhiều địa phương khác nhau. Mô hình có khả năng nói được nhiều chất giọng và phong cách khác nhau tùy vào chất giọng được tham khảo.
-</p>
+		    <p style="font-size:large; color:black"> Mô hình đề xuất được huấn luyện trên tổng cộng 100 giờ dữ liệu bao gồm nhiều chất giọng thuộc nhiều địa phương khác nhau. Mô hình có khả năng nói được nhiều chất giọng và phong cách khác nhau tùy vào chất giọng và phong cách được tham khảo.
+            </p>
 	    </div>
 		
 
@@ -124,24 +124,16 @@
                 <div style='flex: 1;  '>
                     <div class='row' style='width: 450px; height:130px; '>
                         <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'><b>Text</b></p>
-                        <div style='height: 130px; vertical-align: middle'>
-			<p style='height: 130px; width: 250px; padding: 15px 0; text-align: center;'><i>Ngôi đền này được xây dựng từ thế kỷ thứ X tương truyền là nơi thần linh cai quản bảo vệ cho hòn đảo khỏi những linh hồn quỷ dữ.</i></p>
+                        <div style=' vertical-align: middle'>
+			<p style=' width: 250px; padding: 15px 0; text-align: center;'><i>Ngôi đền này được xây dựng từ thế kỷ thứ X tương truyền là nơi thần linh cai quản bảo vệ cho hòn đảo khỏi những linh hồn quỷ dữ.</i></p>
                         </div>
                     </div>
 
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Ground Truth</p>
-                        <div style='height: 60px; vertical-align: middle'>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px'>
-                                <source src="./LJSpeech/GT/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
+
 			
 			
                     <div class='row' style='width: 450px; height:50px; '>
-                        <p style='height: 60px; width: 250px; padding: 15px 0; text-align: left;'><b>(1) Northern male speaker</b></p>
+                        <p style='height: 60px; width: 250px; padding: 15px 0; text-align: left;'><b></b></p>
                         <div style='height: 60px; vertical-align: middle'>
                         </div>
                     </div>
@@ -149,7 +141,7 @@
 			
                     <div class='row' style='width: 450px; height:50px; '>
                         <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>VITS-baseline</p>
+                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Southern-male</p>
                         </div>
                         <div style='height: 60px; '>
                             <audio controls controlsList="nodownload"
@@ -160,7 +152,7 @@
                     </div>
                     <div class='row' style='width: 450px; height:50px; '>
                         <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>FastSpeech2</p>
+                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Southern-male</p>
                         </div>
                         <div style='height: 60px; '>
                             <audio controls controlsList="nodownload"
@@ -171,7 +163,7 @@
                     </div>
                     <div class='row' style='width: 450px; height:50px; '>
                         <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>GradTTS</p>
+                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Southern-male</p>
                         </div>
                         <div style='height: 60px; '>
                             <audio controls controlsList="nodownload"
@@ -182,7 +174,7 @@
                     </div>
 		    <div class='row' style='width: 450px; height:50px; '>
                         <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Proposed
+                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Southern-male
                             </p>
                         </div>
                         <div style='height: 60px; '>
@@ -193,173 +185,17 @@
                         </div>
                     </div>
 
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <p style='height: 60px; width: 250px; padding: 15px 0; text-align: left;'><b>(2) Northern male speaker</b></p>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>VITS-baseline</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_1hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>FastSpeech2</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech2_1hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>GradTTS</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_1hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Proposed</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_1hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <p style='height: 60px; width: 250px; padding: 15px 0; text-align: left;'><b>(3) Northern male speaker</b></p>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>VITS-baseline</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>FastSpeech2</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech2_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>GradTTS</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Proposed</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <p style='height: 60px; width: 250px; padding: 15px 0; text-align: left;'><b>(4) Northern male speaker</b></p>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>VITS-baseline</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>FastSpeech2</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech2_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>GradTTS</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Proposed</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-		 </div>
+		</div>
 		    
 <!-- 	<div style='display: flex; align-content: center;flex-wrap: nowrap; '> -->
                 <div style='flex: 2;'>
                     <div class='row' style='width: 300px; height:130px; '>
-                        <div style='height: 130px; vertical-align: middle'>
-			<p style='height: 130px; width: 250px; padding: 15px 0; text-align: center;'><i>Khi ấy tôi còn ở Tây Nguyên làm phiên dịch cho một công ty cà phê của Đức đặt văn phòng ở Ban Mê Thuột.</i></p>
+                        <div style=' vertical-align: middle'>
+			<p style=' width: 250px; padding: 15px 0; text-align: center;'><i>Khi ấy tôi còn ở Tây Nguyên làm phiên dịch cho một công ty cà phê của Đức đặt văn phòng ở Ban Mê Thuột.</i></p>
                         </div>
                     </div>
 		
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px'>
-                                <source src="./LJSpeech/GT/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
+ 
 
                     <div class='row' style='width: 300px; height:50px; '>
                         <div style='height: 60px; vertical-align: middle'>
@@ -376,27 +212,35 @@
                             </audio>
                         </div>
                     </div>
+
                     <div class='row' style='width: 300px; height:50px; '>
                         <div style='height: 60px;'>
                         </div>
-                        <div style='height: 60px; '>
+
+
+                    <div style='height: 60px; '>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 270px; height: 50px '>
                                 <source src="./LJSpeech/FastSpeech2_10min/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
+
                     </div>
+
+
                     <div class='row' style='width: 300px; height:50px; '>
                         <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
+                    </div>
+
+                    <div style='height: 60px; '>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 270px; height: 50px '>
                                 <source src="./LJSpeech/VITS_scratch_10min/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
-		    <div class='row' style='width: 300px; height:50px; '>
+
+		           <div class='row' style='width: 300px; height:50px; '>
                         <div style='height: 60px;'>
                         </div>
                         <div style='height: 60px; '>
@@ -406,160 +250,24 @@
                             </audio>
                         </div>
                     </div>
+
                     <div class='row' style='width: 300px; height:50px; '>
                         <div style='height: 60px; vertical-align: middle'>
                         </div>
                     </div>
 			
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_1hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech2_1hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_1hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_1hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_10hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech2_10hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_10hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_10hour/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-            <div class='row' style='width: 450px; height:50px; '>
-                <p style='height: 60px; width: 250px; padding: 15px 0; text-align: left;'><b>(4) Northern male speaker</b></p>
-                <div style='height: 60px; vertical-align: middle'>
-                </div>
-            </div>
-            <div class='row' style='width: 450px; height:50px; '>
-                <div style='height: 60px;'>
-                    <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>VITS-baseline</p>
-                </div>
-                <div style='height: 60px; '>
-                    <audio controls controlsList="nodownload"
-                        style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                        <source src="./LJSpeech/GlowTTS_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                    </audio>
-                </div>
-            </div>
-            <div class='row' style='width: 450px; height:50px; '>
-                <div style='height: 60px;'>
-                    <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>FastSpeech2</p>
-                </div>
-                <div style='height: 60px; '>
-                    <audio controls controlsList="nodownload"
-                        style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                        <source src="./LJSpeech/FastSpeech2_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                    </audio>
-                </div>
-            </div>
-            <div class='row' style='width: 450px; height:50px; '>
-                <div style='height: 60px;'>
-                    <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>GradTTS</p>
-                </div>
-                <div style='height: 60px; '>
-                    <audio controls controlsList="nodownload"
-                        style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                        <source src="./LJSpeech/VITS_scratch_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                    </audio>
-                </div>
-            </div>
-            <div class='row' style='width: 450px; height:50px; '>
-                <div style='height: 60px;'>
-                    <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Proposed</p>
-                </div>
-                <div style='height: 60px; '>
-                    <audio controls controlsList="nodownload"
-                        style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                        <source src="./LJSpeech/VITS_finetuned_10hour/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                    </audio>
-                </div>
-            </div>
- </div>
+
+  
+
+            
 		</div>
                 <div style='flex: 3;  '>
                     <div class='row' style='width: 300px; height:130px; '>
-                        <div style='height: 130px; vertical-align: middle'>
-			<p style='height: 130px; width: 250px; padding: 15px 0; text-align: center;'><i>Cây cô đơn là một địa danh rất quen thuộc với những người từng đến ở lại và lỡ phải lòng với vùng đất ngàn hoa Đà Lạt.</i></p>
+                        <div style=' vertical-align: middle'>
+			<p style=' width: 250px; padding: 15px 0; text-align: center;'><i>Cây cô đơn là một địa danh rất quen thuộc với những người từng đến ở lại và lỡ phải lòng với vùng đất ngàn hoa Đà Lạt.</i></p>
                         </div>
                     </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px'>
-                                <source src="./LJSpeech/GT/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
+
                     <div class='row' style='width: 300px; height:50px; '>
                         <div style='height: 60px; vertical-align: middle'>
                         </div>
@@ -605,112 +313,17 @@
                             </audio>
                         </div>
                     </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_1hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech2_1hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_1hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_1hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
 
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-			
-			
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_10hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech2_10hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_10hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_10hour/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
+
+
 	        </div>
                 <div style='flex: 4;  '>
                     <div class='row' style='width: 300px; height:130px; '>
-                        <div style='height: 130px; vertical-align: middle'>
-			<p style='height: 130px; width: 250px; padding: 15px 0; text-align: center;'><i>Có thể thỏa sức đắm mình trong những giai điệu bay bổng giàu cảm xúc như đang hiện diện tại sân khấu.</i></p>
+                        <div style=' vertical-align: middle'>
+			<p style=' width: 250px; padding: 15px 0; text-align: center;'><i>Có thể thỏa sức đắm mình trong những giai điệu bay bổng giàu cảm xúc như đang hiện diện tại sân khấu.</i></p>
                         </div>
                     </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px'>
-                                <source src="./LJSpeech/GT/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
+
                     <div class='row' style='width: 300px; height:50px; '>
                         <div style='height: 60px; vertical-align: middle'>
                         </div>
@@ -755,94 +368,10 @@
                             </audio>
                         </div>
                     </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_1hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech_1hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_1hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_1hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/GlowTTS_10hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/FastSpeech2_10hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_scratch_10hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./LJSpeech/VITS_finetuned_10hour/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
+
+
+
+
 		 </div>
             </div>
 		
@@ -875,8 +404,8 @@
                 <div style='flex: 1;  '>
                     <div class='row' style='width: 450px; height:130px; '>
                         <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'><b>Text</b></p>
-                        <div style='height: 130px; vertical-align: middle'>
-			<p style='height: 130px; width: 250px; padding: 15px 0; text-align: center;'><i>ngôi đền này được xây dựng từ thế kỷ thứ X tương truyền là nơi thần linh cai quản bảo vệ cho hòn đảo khỏi những linh hồn quỷ dữ.</i></p>
+                        <div style=' vertical-align: middle'>
+			<p style=' width: 250px; padding: 15px 0; text-align: center;'><i>Ngôi đền này được xây dựng từ thế kỷ thứ X tương truyền là nơi thần linh cai quản bảo vệ cho hòn đảo khỏi những linh hồn quỷ dữ.</i></p>
                         </div>
                     </div>
 
@@ -1048,8 +577,8 @@
 <!-- 	<div style='display: flex; align-content: center;flex-wrap: nowrap; '> -->
                 <div style='flex: 2;'>
                     <div class='row' style='width: 300px; height:130px; '>
-                        <div style='height: 130px; vertical-align: middle'>
-			<p style='height: 130px; width: 250px; padding: 15px 0; text-align: center;'><i>Khi ấy tôi còn ở Tây Nguyên làm phiên dịch cho một công ty cà phê của Đức đặt văn phòng ở Ban Mê Thuột.</i></p>
+                        <div style=' vertical-align: middle'>
+			<p style=' width: 250px; padding: 15px 0; text-align: center;'><i>Khi ấy tôi còn ở Tây Nguyên làm phiên dịch cho một công ty cà phê của Đức đặt văn phòng ở Ban Mê Thuột.</i></p>
                         </div>
                     </div>
 		
@@ -1199,8 +728,8 @@
 		</div>
                 <div style='flex: 3;  '>
                     <div class='row' style='width: 300px; height:130px; '>
-                        <div style='height: 130px; vertical-align: middle'>
-			<p style='height: 130px; width: 250px; padding: 15px 0; text-align: center;'><i>Cây cô đơn là một địa danh rất quen thuộc với những người từng đến ở lại và lỡ phải lòng với vùng đất ngàn hoa Đà Lạt.</i></p>
+                        <div style=' vertical-align: middle'>
+			<p style=' width: 250px; padding: 15px 0; text-align: center;'><i>Cây cô đơn là một địa danh rất quen thuộc với những người từng đến ở lại và lỡ phải lòng với vùng đất ngàn hoa Đà Lạt.</i></p>
                         </div>
                     </div>
                     <div class='row' style='width: 300px; height:50px; '>
@@ -1350,8 +879,8 @@
 	        </div>
                 <div style='flex: 4;  '>
                     <div class='row' style='width: 300px; height:130px; '>
-                        <div style='height: 130px; vertical-align: middle'>
-			<p style='height: 130px; width: 250px; padding: 15px 0; text-align: center;'><i>Có thể thỏa sức đắm mình trong những giai điệu bay bổng giàu cảm xúc như đang hiện diện tại sân khấu</i></p>
+                        <div style=' vertical-align: middle'>
+			<p style=' width: 250px; padding: 15px 0; text-align: center;'><i>Có thể thỏa sức đắm mình trong những giai điệu bay bổng giàu cảm xúc như đang hiện diện tại sân khấu</i></p>
                         </div>
                     </div>
                     <div class='row' style='width: 300px; height:50px; '>
@@ -1522,8 +1051,8 @@
                     <div style='flex: 1;  '>
                         <div class='row' style='width: 450px; height:130px; '>
                             <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'><b>Text</b></p>
-                            <div style='height: 130px; vertical-align: middle'>
-                <p style='height: 130px; width: 250px; padding: 15px 0; text-align: center;'><i>Các gia đình sau đây làm thợ gốm cư ngụ tại Neta'im và Gedera họ ở đó làm việc cho các vua</i></p>
+                            <div style=' vertical-align: middle'>
+                <p style=' width: 250px; padding: 15px 0; text-align: center;'><i>Các gia đình sau đây làm thợ gốm cư ngụ tại Neta'im và Gedera họ ở đó làm việc cho các vua</i></p>
                             </div>
                         </div>
     
@@ -1695,8 +1224,8 @@
     <!-- 	<div style='display: flex; align-content: center;flex-wrap: nowrap; '> -->
                     <div style='flex: 2;'>
                         <div class='row' style='width: 300px; height:130px; '>
-                            <div style='height: 130px; vertical-align: middle'>
-                <p style='height: 130px; width: 250px; padding: 15px 0; text-align: center;'><i>Khi ấy tôi còn ở Tây Nguyên làm phiên dịch cho một công ty cà phê của Đức đặt văn phòng ở Ban Mê Thuột.</i></p>
+                            <div style=' vertical-align: middle'>
+                <p style=' width: 250px; padding: 15px 0; text-align: center;'><i>Khi ấy tôi còn ở Tây Nguyên làm phiên dịch cho một công ty cà phê của Đức đặt văn phòng ở Ban Mê Thuột.</i></p>
                             </div>
                         </div>
             
@@ -1846,8 +1375,8 @@
             </div>
                     <div style='flex: 3;  '>
                         <div class='row' style='width: 300px; height:130px; '>
-                            <div style='height: 130px; vertical-align: middle'>
-                <p style='height: 130px; width: 250px; padding: 15px 0; text-align: center;'><i>Cây cô đơn là một địa danh rất quen thuộc với những người từng đến ở lại và lỡ phải lòng với vùng đất ngàn hoa Đà Lạt.</i></p>
+                            <div style=' vertical-align: middle'>
+                <p style=' width: 250px; padding: 15px 0; text-align: center;'><i>Cây cô đơn là một địa danh rất quen thuộc với những người từng đến ở lại và lỡ phải lòng với vùng đất ngàn hoa Đà Lạt.</i></p>
                             </div>
                         </div>
                         <div class='row' style='width: 300px; height:50px; '>
@@ -1997,8 +1526,8 @@
                 </div>
                     <div style='flex: 4;  '>
                         <div class='row' style='width: 300px; height:130px; '>
-                            <div style='height: 130px; vertical-align: middle'>
-                <p style='height: 130px; width: 250px; padding: 15px 0; text-align: center;'><i>Có thể thỏa sức đắm mình trong những giai điệu bay bổng giàu cảm xúc như đang hiện diện tại sân khấu</i></p>
+                            <div style=' vertical-align: middle'>
+                <p style=' width: 250px; padding: 15px 0; text-align: center;'><i>Có thể thỏa sức đắm mình trong những giai điệu bay bổng giàu cảm xúc như đang hiện diện tại sân khấu</i></p>
                             </div>
                         </div>
                         <div class='row' style='width: 300px; height:50px; '>
@@ -2152,14 +1681,13 @@
             <hr>
             <div class='row text-center'>
                 <div class='col'>
-                    <p class='h2 font-weight-bold '>Zero-Shot Multi-Speaker TTS</p>
+                    <p class='h2 font-weight-bold '>Ablation study: Out-of-distribution (OOD) text</p>
                 </div>
             </div>
 	    <div>
-		    <p style="font-size:large; color:black"> The proposed model was pre-trained on the speech-only dataset of LibriTTS (245 hours, 1151 speakers), and fine-tuned on the subsets of labeled VCTK with denoted lengths and speakers. All the baselines were also trained on the denoted dataset.
- </p>
+		    <p style="font-size:large; color:black"> Mô hình đề xuất được huấn luyện trên tổng cộng 100 giờ dữ liệu bao gồm nhiều chất giọng thuộc nhiều địa phương khác nhau. 
+            </p>
 	    </div>
-		
 		
 
             <div class='row' style='margin-top: 40px; margin-bottom: 10px;'>
@@ -2169,51 +1697,18 @@
 
             <div style='display: flex; align-content: center;flex-wrap: nowrap;'>
                 <div style='flex: 1;  '>
-                    <div class='row' style='width: 450px; height:60px; '>
+                    <div class='row' style='width: 450px; height:130px; '>
                         <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'><b>Text</b></p>
-                        <div style='height: 120px; vertical-align: middle'>
-			<p style='height: 60px; width: 250px; padding: 15px 0; text-align: center;'><i>I think a move would create a lot of interest.</i></p>
+                        <div style=' vertical-align: middle'>
+			<p style=' width: 250px; padding: 15px 0; text-align: center;'><i>Việc nhất trí nâng cấp quan hệ hai nước lên Đối tác Chiến lược Toàn diện vì hòa bình, hợp tác và phát triển bền vững được kỳ vọng sẽ mở ra một chương mới trong quan hệ Việt Nam - Hoa Kỳ.</i></p>
                         </div>
                     </div>
 
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Reference</p>
-                        <div style='height: 60px; vertical-align: middle'>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px'>
-                                <source src="./VCTK/REF/p237_147.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
 
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Ground Truth</p>
-                        <div style='height: 60px; vertical-align: middle'>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px'>
-                                <source src="./VCTK/GT/p237_034.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-	
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <p style='height: 60px; width: 250px; padding: 15px 0; text-align: left;'><b>(1) LJSpeech 30 min, 1 speaker</b></p>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Proposed</p>
-                        <div style='height: 60px; vertical-align: middle'>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px'>
-                                <source src="./VCTK/VITS_finetuned_30min/p237_034.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
+			
 			
                     <div class='row' style='width: 450px; height:50px; '>
-                        <p style='height: 60px; width: 250px; padding: 15px 0; text-align: left;'><b>(2) VCTK 1 hour, 4 speakers  </b></p>
+                        <p style='height: 60px; width: 250px; padding: 15px 0; text-align: left;'><b></b></p>
                         <div style='height: 60px; vertical-align: middle'>
                         </div>
                     </div>
@@ -2221,235 +1716,62 @@
 			
                     <div class='row' style='width: 450px; height:50px; '>
                         <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>SC-GlowTTS</p>
+                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Baseline-VITS</p>
                         </div>
                         <div style='height: 60px; '>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/SC_GlowTTS_1hour/p237_034.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./LJSpeech/GlowTTS_10min/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
                     <div class='row' style='width: 450px; height:50px; '>
                         <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Meta-StyleSpeech</p>
+                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>VIEACT-TTS-VC w/o Phoneme BERT</p>
                         </div>
                         <div style='height: 60px; '>
                             <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/MetaStyleSpeech_1hour/p237_034.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                style='display: inline-block; padding:10px; width: 270px; height: 50px '>
+                                <source src="./LJSpeech/FastSpeech2_10min/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
                     <div class='row' style='width: 450px; height:50px; '>
                         <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>VITS-baseline</p>
+                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Southern-male</p>
                         </div>
                         <div style='height: 60px; '>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_scratch_1hour/p237_034.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./LJSpeech/VITS_scratch_10min/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
 		    <div class='row' style='width: 450px; height:50px; '>
                         <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Proposed
+                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Southern-male
                             </p>
                         </div>
                         <div style='height: 60px; '>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_finetuned_1hour/p237_034.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./LJSpeech/VITS_finetuned_10min/LJ010-0062.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
 
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <p style='height: 60px; width: 250px; padding: 15px 0; text-align: left;'><b>(3) VCTK 5 hour, 20 speakers  </b></p>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>SC-GlowTTS</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/SC_GlowTTS_5hour/p237_034.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Meta-StyleSpeech</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/MetaStyleSpeech_5hour/p237_034.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>VITS-baseline</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_scratch_5hour/p237_034.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Proposed</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_finetuned_5hour/p237_034.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <p style='height: 60px; width: 250px; padding: 15px 0; text-align: left;'><b>(4) VCTK 20 hour, 80 speakers  </b></p>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>SC-GlowTTS</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/SC_GlowTTS_20hour/p237_034.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Meta-StyleSpeech</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/MetaStyleSpeech_20hour/p237_034.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>VITS-baseline</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_scratch_20hour/p237_034.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 450px; height:50px; '>
-                        <div style='height: 60px;'>
-                            <p style='height: 60px; width: 150px; padding: 15px 0; text-align: center;'>Proposed</p>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_finetuned_20hour/p237_034.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-		 </div>
+		</div>
 		    
 <!-- 	<div style='display: flex; align-content: center;flex-wrap: nowrap; '> -->
                 <div style='flex: 2;'>
-                    <div class='row' style='width: 300px; height:60px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-			<p style='height: 60px; width: 250px; padding: 15px 0; text-align: center;'><i>Ask her to bring these things with her from the store.</i></p>
-                        </div>
-                    </div>
-			
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px'>
-                                <source src="./VCTK/REF/p311_198.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
+                    <div class='row' style='width: 300px; height:130px; '>
+                        <div style=' vertical-align: middle'>
+			<p style=' width: 250px; padding: 15px 0; text-align: center;'><i>Einstein còn đề xuất nguyên lý nổi tiếng về sự tương đương giữa khối lượng và năng lượng. Công thức này cho thấy khối lượng và năng lượng có thể chuyển hóa lẫn nhau.</i></p>
                         </div>
                     </div>
 		
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px'>
-                                <source src="./VCTK/GT/p311_002.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
+ 
 
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_finetuned_30min/p311_002.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/SC_GlowTTS_1hour/p311_002.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/MetaStyleSpeech_1hour/p311_002.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_scratch_1hour/p311_002.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-		    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_finetuned_1hour/p311_002.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
                     <div class='row' style='width: 300px; height:50px; '>
                         <div style='height: 60px; vertical-align: middle'>
                         </div>
@@ -2461,312 +1783,78 @@
                         <div style='height: 60px; '>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/SC_GlowTTS_5hour/p311_002.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./LJSpeech/GlowTTS_10min/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
+
                     <div class='row' style='width: 300px; height:50px; '>
                         <div style='height: 60px;'>
                         </div>
-                        <div style='height: 60px; '>
+
+
+                    <div style='height: 60px; '>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/MetaStyleSpeech_5hour/p311_002.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./LJSpeech/FastSpeech2_10min/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                            </audio>
+                        </div>
+
+                    </div>
+
+
+                    <div class='row' style='width: 300px; height:50px; '>
+                        <div style='height: 60px;'>
+                    </div>
+
+                    <div style='height: 60px; '>
+                            <audio controls controlsList="nodownload"
+                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
+                                <source src="./LJSpeech/VITS_scratch_10min/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
-                    <div class='row' style='width: 300px; height:50px; '>
+
+		           <div class='row' style='width: 300px; height:50px; '>
                         <div style='height: 60px;'>
                         </div>
                         <div style='height: 60px; '>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_scratch_5hour/p311_002.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./LJSpeech/VITS_finetuned_10min/LJ013-0109.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_finetuned_5hour/p311_002.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
+                    </div>
+
                     <div class='row' style='width: 300px; height:50px; '>
                         <div style='height: 60px; vertical-align: middle'>
                         </div>
                     </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/SC_GlowTTS_20hour/p311_002.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/MetaStyleSpeech_20hour/p311_002.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_scratch_20hour/p311_002.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_finetuned_20hour/p311_002.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
+			
+
+  
+
+            
 		</div>
                 <div style='flex: 3;  '>
-                    <div class='row' style='width: 300px; height:60px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-			<p style='height: 60px; width: 250px; padding: 15px 0; text-align: center;'><i>This represents a tough game for us.</i></p>
+                    <div class='row' style='width: 300px; height:130px; '>
+                        <div style=' vertical-align: middle'>
+			<p style=' width: 250px; padding: 15px 0; text-align: center;'><i>Mô hình ngôn ngữ lớn là một loại mô hình ngôn ngữ được đào tạo bằng cách sử dụng các kỹ thuật học sâu trên tập dữ liệu văn bản khổng lồ. Các mô hình này có khả năng tạo văn bản tương tự và thực hiện các tác vụ xử lý ngôn ngữ tự nhiên.</i></p>
                         </div>
                     </div>
-			
-			
-			
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px'>
-                                <source src="./VCTK/REF/p267_085.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-			
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px'>
-                                <source src="./VCTK/GT/p267_038.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-			
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_finetuned_30min/p267_038.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-			
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/SC_GlowTTS_1hour/p267_038.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/MetaStyleSpeech_1hour/p267_038.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_scratch_1hour/p267_038.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-		    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_finetuned_1hour/p267_038.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/SC_GlowTTS_5hour/p267_038.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/MetaStyleSpeech_5hour/p267_038.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_scratch_5hour/p267_038.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_finetuned_5hour/p267_038.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
 
                     <div class='row' style='width: 300px; height:50px; '>
                         <div style='height: 60px; vertical-align: middle'>
                         </div>
                     </div>
 			
-			
                     <div class='row' style='width: 300px; height:50px; '>
                         <div style='height: 60px;'>
                         </div>
                         <div style='height: 60px; '>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/SC_GlowTTS_20hour/p267_038.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/MetaStyleSpeech_20hour/p267_038.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_scratch_20hour/p267_038.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_finetuned_20hour/p267_038.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-	        </div>
-                <div style='flex: 4;  '>
-                    <div class='row' style='width: 300px; height:60px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-			<p style='height: 60px; width: 250px; padding: 15px 0; text-align: center;'><i>It can't just be a cynical marketing exercise.</i></p>
-                        </div>
-                    </div>
-			
-			
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px'>
-                                <source src="./VCTK/REF/p333_391.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px; width: 270px; height: 50px'>
-                                <source src="./VCTK/GT/p333_422.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_finetuned_30min/p333_422.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
-                        </div>
-                    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/SC_GlowTTS_1hour/p333_422.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./LJSpeech/GlowTTS_10min/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
@@ -2776,7 +1864,7 @@
                         <div style='height: 60px; '>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/MetaStyleSpeech_1hour/p333_422.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./LJSpeech/FastSpeech2_10min/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
@@ -2786,7 +1874,7 @@
                         <div style='height: 60px; '>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_scratch_1hour/p333_422.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./LJSpeech/VITS_scratch_10min/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
@@ -2796,10 +1884,21 @@
                         <div style='height: 60px; '>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_finetuned_1hour/p333_422.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./LJSpeech/VITS_finetuned_10min/LJ045-0228.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
+
+
+
+	        </div>
+                <div style='flex: 4;  '>
+                    <div class='row' style='width: 300px; height:130px; '>
+                        <div style=' vertical-align: middle'>
+			<p style=' width: 250px; padding: 15px 0; text-align: center;'><i>Trí tuệ Nhân Tạo sẽ giải quyết các vấn đề mà chúng ta gặp phải ngày nay như tình trạng thất nghiệp, bệnh tật, nghèo đói.</i></p>
+                        </div>
+                    </div>
+
                     <div class='row' style='width: 300px; height:50px; '>
                         <div style='height: 60px; vertical-align: middle'>
                         </div>
@@ -2810,7 +1909,7 @@
                         <div style='height: 60px; '>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/SC_GlowTTS_5hour/p333_422.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./LJSpeech/GlowTTS_10min/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
@@ -2820,7 +1919,7 @@
                         <div style='height: 60px; '>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/MetaStyleSpeech_5hour/p333_422.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./LJSpeech/FastSpeech2_10min/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
                     </div>
@@ -2830,64 +1929,25 @@
                         <div style='height: 60px; '>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_scratch_5hour/p333_422.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./LJSpeech/VITS_scratch_10min/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_finetuned_5hour/p333_422.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px; vertical-align: middle'>
                         </div>
                     </div>
-                    <div class='row' style='width: 300px; height:50px; '>
+		    <div class='row' style='width: 300px; height:50px; '>
                         <div style='height: 60px;'>
                         </div>
                         <div style='height: 60px; '>
                             <audio controls controlsList="nodownload"
                                 style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/SC_GlowTTS_20hour/p333_422.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
+                                <source src="./LJSpeech/VITS_finetuned_10min/LJ048-0288.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
                             </audio>
                         </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/MetaStyleSpeech_20hour/p333_422.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_scratch_20hour/p333_422.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
-                    <div class='row' style='width: 300px; height:50px; '>
-                        <div style='height: 60px;'>
-                        </div>
-                        <div style='height: 60px; '>
-                            <audio controls controlsList="nodownload"
-                                style='display: inline-block; padding:8px; width: 270px; height: 50px '>
-                                <source src="./VCTK/VITS_finetuned_20hour/p333_422.wav" class="img-fluid rounded mx-auto d-block" alt="temp">
-                            </audio>
-                        </div>
-		    </div>
+                    </div>
+
+
+
+
+
 		 </div>
             </div>
 
